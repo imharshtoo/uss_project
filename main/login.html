@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: rgb(133, 57, 247);
+            text-align: center;
+        }
+        .tpp{
+            position:absolute;
+            display: flex;
+            top: calc((100% - 9cm)/2);
+            left: calc((100% - 8cm)/2);
+            justify-content: center;
+            align-items: center;
+        }
+        .tpp1{
+            background-color:white;
+            width: 8cm;
+            height: 9cm;
+            border-radius: 0.34cm;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+        h2{
+            font-size: 1cm;
+            margin-bottom: 0;
+        }
+        p{
+            font-size: 15px;
+        }
+        .alert-box{
+            background-color: rgb(49, 64, 204);
+            position: absolute;
+            width: 10cm;
+            color: white;
+            left:calc((100% - 10cm)/2);
+            border-radius: 50%;
+        }
+        .alert{
+            font-size: 1cm;
+        }
+        .email{
+            text-align: center;
+            height: 1cm;
+            width: 6cm;
+            margin-top:0;
+            margin-bottom: 0.2cm;
+        }
+        .password{
+            text-align: center;
+            height: 1cm;
+            width: 6cm;
+        }
+        .submit-btn{
+            background-color:rgb(73, 239, 145);
+            width: 4cm;
+            display: block;
+            height: 1cm;
+            margin-left: 2cm;
+            margin-top: 0.4cm;
+            border-radius: 0.4cm;
+        }
+        .submit-btn:hover{
+            background-color:rgb(48, 192, 20);
+            cursor: pointer;
+        }
+        @media screen and (min-width:243px) and (max-width:649px){
+            .tpp{
+                display: flex;
+                flex-direction: column;
+                top:calc((100% - 14cm)/2);
+                left: calc((100% - 7cm)/2);
+            }
+            .tpp1{
+                height: 7cm;
+                width: 7cm;
+            }
+            h1{
+                font-size: 25px;
+            }
+            .password{
+            width: 6cm;
+            }
+            .ritika{
+                width: 6cm;
+            }
+            .email{
+                width: 6cm;
+            }
+            
+            .link{
+                text-decoration: none;
+                color: aqua;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="alert-box">
+        <p class="alert"></p>
+    </div>
+    <div class="tpp tpp1">
+            <div class="form">
+                <h2>Login Page</h2>
+                <p>It's Quite easy to use</p>
+                <input type="email" class="email" placeholder="email" required autocomplete="off">
+                <input type="password" class="password" placeholder="password" autocomplete="off" required>
+                <button class="submit-btn">log in</button>
+                <a href="/register" class="link">don't have an account? Register one</a>
+            </div>
+    </div>
+    <script src="./js/form.js"></script>
+</body>
+</html>

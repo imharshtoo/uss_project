@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: lightgrey;
+        }
+        .pp{
+            display:flex;
+            background-color: white;
+            flex-direction: column;
+            position: absolute;
+            /* justify-content: center; */
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            align-items: center;
+            width: 8cm;
+            height: 9cm;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 1cm;
+        }
+        input{
+            width: 6cm;
+            height: 1cm;
+            margin: 5px;
+            border: 1px solid rgb(9, 9, 9);
+            text-align: center;
+            background-color:rgb(213, 184, 207);
+            margin-top: 10px;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        input:hover{
+            background-color: white;
+        }
+        .name{
+            margin-top:1.5cm;
+        }
+        .submit-btn{
+            background-color:rgb(46, 200, 46);
+            border-radius: 2cm;
+            width: 5cm;
+            border: none;
+            margin-top: 12px;
+
+            height: 0.9cm;
+        }
+        .submit-btn:hover{
+            background-color: aqua;
+            cursor: pointer;
+        }
+        .link{
+            margin-top: 20px;
+            text-decoration: none;
+            color:white;
+            background-color: rgb(96, 170, 199);
+            border-radius: 20px;
+        }
+        .link:hover{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="pp pp1 form">
+        <input type="text" placeholder="name" class="name" required>
+        <input type="email" placeholder="email" class="email" required>
+        <input type="password" placeholder="password" class="password" required>
+        <button class="submit-btn">register</button>
+        <a href="/login" class="link">already have an account ? log in here</a>
+    </div>
+    <script src="./js/form.js"></script>
+</body>
+</html>

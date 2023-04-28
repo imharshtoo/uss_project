@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Manager</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(203, 199, 199);
+            text-align: center;
+        }
+        .main{
+            background-color: bisque;
+            border-radius: 40px;
+            width: 10cm;
+            margin-left: calc((100% - 10cm)/2);
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        }
+        .pp1{
+            margin-top: 3cm;
+            background-color: rgb(112, 199, 190);
+            padding-top: 0.3cm;
+            padding-bottom: 0.3cm;
+        }
+        .tm{
+            padding-top: 1cm;
+            padding-bottom: 1.5cm;
+            background-color: rgb(223, 205, 205);
+        }
+        button{
+            background-color: rgb(144, 221, 144);
+            border: none;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            width: 60%;
+            font-size: 25px;
+            font-weight: 600;
+            color: coral;
+            height: 1cm;
+            border-radius: 1cm;
+            margin-top: 0.5cm;
+        }
+        .pppp{
+            padding-bottom: 0.3cm;
+            text-align: center;
+            padding-top: 0.1cm;
+        }
+        button:hover{
+            background-color:brown;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="pp1">
+            <h1>Welcome To Our Password Manager Tool!</h1>
+            <h2>Here Your Passwords are Safe</h2>
+        </div>
+        <div class="tm">
+            <button class="sign">Sign In</button>
+            <button class="login">Log In</button>
+        </div>
+        <div class="pppp"> 
+            <p>Terms & Conditions</p>
+        </div>
+    </div>
+    <script>
+        let loginbtn=document.querySelector(".login");
+        loginbtn.addEventListener("click",(e)=>{
+            window.location.href="./login.html";
+        })
+        let signup=document.querySelector(".sign");
+        signup.addEventListener("click",(e)=>{
+            window.location.href="./register.html";
+        })
+    </script>
+</body>
+</html>
